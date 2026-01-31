@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <title>Color Picker</title>
+</head>
+<body>
+  <main class="main">
+    <h2 class="title">Color Picker</h2>
+
+    <div class="picker-area">
+      <div class="saturation-panel" id="saturation-panel">
+        <div class="saturation-cursor" id="saturation-cursor"></div>
+      </div>
+
+      <div class="hue-slider-wrap">
+        <input type="range" id="hue-slider" class="hue-slider" min="0" max="360" value="0">
+      </div>
+    </div>
+
+    <div class="color-display">
+      <div class="preview-swatch" id="preview-swatch"></div>
+      <div class="color-values">
+        <label class="color-input-label">
+          HEX
+          <input type="text" id="hex-input" class="hex-input" value="#6366f1" maxlength="7" spellcheck="false">
+        </label>
+        <div class="rgb-row">
+          <label class="color-input-label">R <input type="number" id="r-input" class="rgb-input" min="0" max="255" value="99"></label>
+          <label class="color-input-label">G <input type="number" id="g-input" class="rgb-input" min="0" max="255" value="102"></label>
+          <label class="color-input-label">B <input type="number" id="b-input" class="rgb-input" min="0" max="255" value="241"></label>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script type="module" src="/src/mcp-app.ts"></script>
+</body>
+</html>
